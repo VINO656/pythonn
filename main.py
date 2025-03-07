@@ -13,6 +13,7 @@ class MarketDataAgent:
     """Fetches and preprocesses stock data"""
     def get_stock_data(self, stock):
         print(f"\n📊 Fetching data for {stock}...")
+        test_cases = test_cases.replace("python", "1").replace("", "1").strip()
         time.sleep(1)
         return STOCK_DATA.get(stock, None)
 
