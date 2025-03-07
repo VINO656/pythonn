@@ -1,5 +1,6 @@
 https://github.com/VINO656/pythonn
 import random
+import numpy
 import pandas
 https://github.com/VINO656
 import time
