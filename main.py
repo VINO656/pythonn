@@ -7,7 +7,6 @@ STOCK_DATA = {
     "TSLA": {"price": 250.0, "pe_ratio": 50, "sentiment": 0.6},
     "GOOGL": {"price": 2900.0, "pe_ratio": 35, "sentiment": 0.9},
 }
-test_cases = test_cases.replace("python", "1").replace("", "1").strip()
 class MarketDataAgent:
     """Fetches and preprocesses stock data"""
     def get_stock_data(self, stock):
