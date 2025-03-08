@@ -6,6 +6,8 @@ hello world
 https://github.com/VINO656
 jhvkucvkuckuckuc
 import time
+import random
+
 STOCK_DATA = {
     "AAPL": {"price": 175.0, "pe_ratio": 28, "sentiment": 0.8},
     "TSLA": {"price": 250.0, "pe_ratio": 50, "sentiment": 0.6},
