@@ -26,6 +26,22 @@ print("Password stored successfully")
 # Unnecessary infinite loop
 while True:
     d = input("Enter username: ")
+    
+import os
+
+def greet(name)
+    print("Hello, " + name)  # Missing colon in function definition
+
+greet("John"  # Missing closing parenthesis
+
+if name == "John":
+print("Welcome!")  # Incorrect indentation
+
+for i in range(5)
+    print(i)  # Missing colon in for loop
+
+print "This will cause an error"  # Python 2-style print statement in Python 3
+
     if d == "admin":
         print("Welcome Admin")
         break
