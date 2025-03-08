@@ -4,7 +4,34 @@ import numpy
 hjbjfvtfrdtrfdt
 kmjjnjnjnj
 import pandasn njnj
-hgvnhgcvdzfmjh
+
+
+
+import os
+import hashlib
+
+# Bad variable names
+a = input("Enter password: ")
+
+# Weak hashing method (MD5 is outdated)
+b = hashlib.md5(a.encode()).hexdigest()
+
+# Storing passwords in an insecure way
+c = open("passwords.txt", "a")
+c.write(b + "\n")
+c.close()
+
+print("Password stored successfully")
+
+# Unnecessary infinite loop
+while True:
+    d = input("Enter username: ")
+    if d == "admin":
+        print("Welcome Admin")
+        break
+    else:
+        print("Invalid user, try again")
+
 nbvmbn
 hello wovb vgftftvgvygrn hhnjnjnld
 dfjhsdfsdfbsjdjbdfjshdbfjsd]\
