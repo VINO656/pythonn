@@ -80,6 +80,8 @@ def main():
     sent_agent = SentimentAnalysisAgent()
     risk_agent = RiskManagementAgent()
     portfolio_manager = PortfolioManager()
+        risk_agent = RiskManagementAgent()
+    portfolio_manager = PortfolioManager()
 
     # Choose stock to analyze
     stock = random.choice(list(STOCK_DATA.keys()))
