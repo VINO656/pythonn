@@ -6,6 +6,10 @@ hello world
 https://github.com/VINO656
 jhvkucvkuckuckuc
 import time
+STOCK_DATA = {
+    "AAPL": {"price": 175.0, "pe_ratio": 28, "sentiment": 0.8},
+    "TSLA": {"price": 250.0, "pe_ratio": 50, "sentiment": 0.6},
+    "GOOGL": {"price": 2900.0, "pe_ratio": 35, "sentiment": 
 
 # Mock stock data (normally fetched via API)
 STOCK_DATA = {
