@@ -13,6 +13,17 @@ awsedrftgyuioklkljhgvccasdfghjkl
 hello worldmcmfdv,vm, 
 hello world
 b vgftftvgvygrn hhnjnjnld
+from azure.identity import DefaultAzureCredential
+from azure.mgmt.apimanagement import ApiManagementClient
+
+# Vulnerable: Hardcoded API key
+api_key = "1234567890ABCDEF1234567890ABCDEF"
+
+# Vulnerable: No proper authentication
+client = ApiManagementClient(credentials=None, subscription_id="YOUR_SUBSCRIPTION_ID")
+
+print(f"Insecurely using API Key: {api_key}")
+
 dfjhsdfsdfbsjdjbdfjshdbfjsd]\
 mkkermflemrkflm
 awsedrftgyuioklkljhgvccasdfghjkl
