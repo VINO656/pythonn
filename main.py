@@ -1,6 +1,21 @@
 import random
 import time
 
+import hashlib
+
+# Simulated hashed password (hash of 'password123')
+hashed_password = hashlib.md5("password123".encode()).hexdigest()
+
+# Dictionary attack
+wordlist = ["123456", "password", "admin", "password123", "letmein"]  # Sample wordlist
+
+for word in wordlist:
+    if hashlib.md5(word.encode()).hexdigest() == hashed_password:
+        print(f"Password found: {word}")
+        break
+else:
+    print("Password not found.")
+
 # Mock stock data (normally fetched via API)
 STOCK_DATA = {
     "AAPL": {"price": 175.0, "pe_ratio": 28, "sentiment": 0.8},
