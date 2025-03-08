@@ -6,6 +6,31 @@ import hashlib
 # Simulated hashed password (hash of 'password123')
 hashed_password = hashlib.md5("password123".encode()).hexdigest()
 
+import os
+import hashlib
+
+# Bad variable names
+a = input("Enter password: ")
+
+# Weak hashing method (MD5 is outdated)
+b = hashlib.md5(a.encode()).hexdigest()
+
+# Storing passwords in an insecure way
+c = open("passwords.txt", "a")
+c.write(b + "\n")
+c.close()
+
+print("Password stored successfully")
+
+# Unnecessary infinite loop
+while True:
+    d = input("Enter username: ")
+    if d == "admin":
+        print("Welcome Admin")
+        break
+    else:
+        print("Invalid user, try again")
+
 # Dictionary attack
 wordlist = ["123456", "password", "admin", "password123", "letmein"]  # Sample wordlist
 
