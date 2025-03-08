@@ -2,16 +2,36 @@ https://github.com/VINO656/pythonn
 import random
 import numpy
 import pandas
-hello world
+hello worldqwdwdwdw
 https://github.com/VINO656
 jhvkucvkuckuckuc
 import time
-import random
+# Program to check if a number is prime or not
 
-STOCK_DATA = {
-    "AAPL": {"price": 175.0, "pe_ratio": 28, "sentiment": 0.8},
-    "TSLA": {"price": 250.0, "pe_ratio": 50, "sentiment": 0.6},
-    "GOOGL": {"price": 2900.0, "pe_ratio": 35, "sentiment": 
+num = 29
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+# define a flag variable
+flag = False
+
+if num == 0 or num == 1:
+    print(num, "is not a prime number")
+elif num > 1:
+    # check for factors
+    for i in range(2, num):
+        if (num % i) == 0:
+            # if factor is found, set flag to True
+            flag = True
+            # break out of loop
+            break
+
+    # check if flag is True
+    if flag:
+        print(num, "is not a prime number")
+    else:
+        print(num, "is a prime number")
 
 # Mock stock data (normally fetched via API)
 STOCK_DATA = {
@@ -80,9 +100,6 @@ def main():
     sent_agent = SentimentAnalysisAgent()
     risk_agent = RiskManagementAgent()
     portfolio_manager = PortfolioManager()
-        risk_agent = RiskManagementAgent()
-    portfolio_manager = PortfolioManager()
-portfolio_manager = PortfolioManag
 
     # Choose stock to analyze
     stock = random.choice(list(STOCK_DATA.keys()))
