@@ -10,6 +10,18 @@ mkkermflemrkflm
 awsedrftgyuioklkljhgvccasdfghjkl
 hello worldmcmfdv,vm, 
 hello world
+b vgftftvgvygrn hhnjnjnld
+dfjhsdfsdfbsjdjbdfjshdbfjsd]\
+mkkermflemrkflm
+awsedrftgyuioklkljhgvccasdfghjkl
+hello worldmcmfdv,vm, 
+hello world
+n nhb hnb  b b b b b b b b  bb b
+k, request, jsonify
+commit this as api_core.py
+k, request, jsonify
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
 n nhb hnb  b b b b b b b b  bb b
 k, request, jsonify
 commit this as api_core.py
