@@ -44,12 +44,6 @@ class SentimentAnalysisAgent:
         print(f"💬 Sentiment Analysis: Market sentiment is {sentiment_label}.")
         return sentiment_label
 
-class RiskManagementAgent:
-    """Manages risk and advises position size"""
-    def analyze(self, stock_data):
-        risk = random.uniform(0, 1)
-        print(f"⚖️ Risk Management: Portfolio risk level is {risk:.2f}.")
-        return risk
 
 class PortfolioManager:
     """Makes final trade decisions based on all analysis"""
@@ -73,6 +67,13 @@ def main():
     sent_agent = SentimentAnalysisAgent()
     risk_agent = RiskManagementAgent()
     portfolio_manager = PortfolioManager()
+    
+class RiskManagementAgent:
+    """Manages risk and advises position size"""
+    def analyze(self, stock_data):
+        risk = random.uniform(0, 1)
+        print(f"⚖️ Risk Management: Portfolio risk level is {risk:.2f}.")
+        return risk
 
     # Choose stock to analyze
     stock = random.choice(list(STOCK_DATA.keys()))
